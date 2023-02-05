@@ -40,8 +40,9 @@ int pop(Stack *stck){
         exit(EXIT_FAILURE);
     }
     int value;
-    value = stck->item;
+    value = stck->item[stck->top];
     stck->top--;
+    stck->size--;
     return value;
 
 }
@@ -63,8 +64,12 @@ int main()
     print(&s1);
     int value;
     value = pop(&s1);
+    printf("la valeur de value est de %d\n",value);
     print(&s1);
 
+    value = pop(&s1);
+    printf("la valeur de value est de %d\n",value);
+    print(&s1);
 
     return 0;
 }
