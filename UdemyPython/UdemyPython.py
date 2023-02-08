@@ -1,9 +1,4 @@
 #Days 9 : learning using dictionnary and nesting in Python
-#student_informations ={
-#    "Nombre":"29",
-#    "Noms": ["Carolina", "Tsiory", "Laza"]  
-#}
-
 #import logo from art.py
 from art import logo_bids
 
